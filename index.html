@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <title>Remine</title>
+   
   </head>
   <body>
     <nav>
@@ -30,11 +31,35 @@
       </div>
     </nav>
 
-    <div class="mbody">
-      <div class="bgimg" style="background-color: black">
-        <img src="/img/Namo-Nov-2022_22-3.webp" alt="" />
-        <button></button>
+    <div class="slideshow-container" style="width: 100%;">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="/img/Namo-Nov-2022-5.webp" style="width:100%" height="500px">
+        
       </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/img/Namo-Nov-2022_22-3.webp" style="width:100%">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/img/sdj.jpg" style="width:100%">
+        
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+        
       <h2>WHO ARE WE ?</h2>
       <div class="des">
         <div class="para">
@@ -120,7 +145,120 @@
       </div><div style="text-align: center; margin-top: 50px;" class="cardbtn">
         <button class="btn">Know More</button>
       </div>
+
+     
+
       
     </div>
+    <div class="tp">
+      <h1>Our Trusted Partners</h1>
+      <div class="c3img">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        <img src="/img/OIP.jpeg" alt="">
+        
+       
+      </div>
+   
+    </div>
+
+    <div class="frm">
+      <div class="frm_txt">Contact Us...</div>
+
+      <div class="inpu"><form action="submit">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <br>
+        <input type="email" placeholder="Email" style="width: 100%;">
+        <br>
+        <input type="number" placeholder="Phone No." max="10"style="width: 100%;">
+        <br>
+        <input type="text" placeholder="Message" style="width: 100%; height: 80px;" >
+        <br>
+        <input type="submit" style="padding: 10px; padding-left: 20px;padding-right: 20px; background-color: orange; font-weight: bolder;font-family: 'Comfortaa', cursive; border: none;">
+
+      </form></div>
+    </div>
+    <div class="footer">
+      <div class="inner-footer">
+     
+    <!--  for company name and description -->
+        <div class="footer-items" style="margin-left: -100px; margin-right: 200px;">
+          <h1>Remine</h1>
+          <p>Recyce The E-waste and Li Batteries and save the <br> Planet 🌍</p>
+        </div>
+     
+    <!--  for quick links  -->
+        <div class="footer-items">
+          <h3>Quick Links</h3>
+          <div class="border1"></div> <!--for the underline -->
+            <ul>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>Search</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="#"><li>About</li></a>
+            </ul>
+        </div>
+     
+
+     
+    <!--  for contact us info -->
+        <div class="footer-items">
+          <h3>Contact us</h3>
+          <div class="border1"></div>
+            <ul>
+              <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i>Remine@gmail.com</li>
+            </ul> 
+           
+    <!--   for social links -->
+            <div class="social-media">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-google-plus-square"></i></a>
+            </div> 
+        </div>
+      </div>
+       
+    <!--   Footer Bottom start  -->
+      <div class="footer-bottom">
+        Made with 💙 By Divyank
+      </div>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
   </body>
 </html>
